@@ -1,58 +1,76 @@
-* {
-    margin: 0;
-    padding: 0;
+body {
+    background: linear-gradient(135deg, #20afcf, #2e82f7);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
 }
 
-body{
-    background-color: #20afcf;
-    text-align: center;
+h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
 }
+
 .container {
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.game{
+
+.game {
     height: 60vmin;
     width: 60vmin;
     display: flex;
-    flex-wrap:wrap ;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1.5vmin;
 }
-.box{
-    height:18vmin ;
+
+.box {
+    height: 18vmin;
     width: 18vmin;
     border-radius: 1rem;
-    border: no;
-    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    border: none;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
     font-size: 8vmin;
-    color: #ffffff;
-    background-color: #000000;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #000, #333);
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
 }
-.reset-btn{
-    padding: 1rem;
+
+.box:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff9800, #f44336);
+}
+
+.reset-btn, #new-btn {
+    padding: 1rem 2rem;
     font-size: 1.25rem;
-    background-color: #000000;
+    background: linear-gradient(135deg, #000, #333);
     color: #fff;
     border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
 }
-#new-btn{
-    padding: 1rem;
-    font-size: 1.25rem;
-    background-color: #000000;
+
+.reset-btn:hover, #new-btn:hover {
+    background: linear-gradient(135deg, #ff9800, #f44336);
+    transform: scale(1.1);
+}
+
+#msg {
     color: #fff;
-    border-radius: 50px;
-}
-#msg{
-    color: rgb(43, 26, 173);
     font-size: 5vmin;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    margin-bottom: 1rem;
 }
-.msg-container{
+
+.msg-container {
     height: 30vmin;
-}
-.hide{
-    display: none;
 }
